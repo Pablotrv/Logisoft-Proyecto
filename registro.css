@@ -1,0 +1,151 @@
+/* Google Fonts modernas */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f6fb;
+  color: #23272f;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #232946;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+.titulo-pagina {
+  color: black;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.formulario-registro {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  padding: 30px 20px;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+label {
+  color: #3a86ff;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #b8c1ec;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 1em;
+  background: #f4f6fb;
+  color: #23272f;
+  margin-bottom: 12px;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+  transition: border 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3a86ff;
+  outline: none;
+}
+
+button,
+.btn {
+  background: #3a86ff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+button:hover,
+.btn:hover {
+  background: #ff006e;
+  color: #fff;
+}
+
+footer {
+  background: #232946;
+  color: #eebbc3;
+  border-radius: 18px 18px 0 0;
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.95em;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.boton-back {
+  background: #004d37 !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1em;
+  padding: 12px 0;
+  margin-top: 18px;
+  box-shadow: 0 2px 8px rgba(6, 214, 160, 0.15);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* Alineación en la grilla Bootstrap */
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.boton-back:hover,
+.boton-back:focus {
+  background: #0781d3 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(17, 138, 178, 0.18);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Responsive con Bootstrap y media queries */
+@media (max-width: 992px) {
+  .formulario-registro {
+    max-width: 98vw;
+    padding: 18px 8px;
+    margin: 24px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 1.5em;
+  }
+  .formulario-registro {
+    padding: 14px 4px;
+    margin: 12px auto;
+  }
+  button,
+  .btn {
+    width: 100%;
+    font-size: 1em;
+  }
+}

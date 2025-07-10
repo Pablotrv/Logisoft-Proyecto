@@ -1,0 +1,169 @@
+/* Tipografía moderna y colores modernos */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@500;700&display=swap");
+
+/* Estilos modernos y pastel para la página de contacto */
+body {
+  background: #f4f6fb;
+  color: #23272f;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #232946;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding-bottom: 10px;
+}
+
+.titulo-pagina {
+  color: #ff006e;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.subtitulo-principal {
+  color: #3a86ff;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lista-enlaces a {
+  background: #3a86ff !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.lista-enlaces a:hover {
+  background: #ff006e !important;
+  color: #fff !important;
+}
+
+main {
+  min-height: 60vh;
+  padding-bottom: 30px;
+}
+
+form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.1);
+  padding: 32px 28px;
+  max-width: 420px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form label {
+  color: #3a86ff;
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+form input,
+form textarea {
+  border: 1px solid #b8c1ec;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 1em;
+  background: #f4f6fb;
+  color: #23272f;
+  margin-bottom: 8px;
+  transition: border 0.2s;
+  resize: none;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1.5px solid #3a86ff;
+  outline: none;
+}
+
+form button[type="submit"] {
+  background: #06d6a0;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+form button[type="submit"]:hover {
+  background: #118ab2;
+  color: #fff;
+}
+
+footer {
+  background: #232946;
+  color: #eebbc3;
+  border-radius: 18px 18px 0 0;
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.95em;
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* Botón flotante sticky para contacto rápido */
+.btn-flotante-contacto {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background: #3a86ff;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 16px rgba(58, 134, 255, 0.18);
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.btn-flotante-contacto:hover {
+  background: #ff006e;
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(255, 0, 110, 0.18);
+}
+
+@media screen and (max-width: 768px) {
+  .btn-flotante-contacto {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn-flotante-contacto {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    bottom: 16px;
+    right: 16px;
+  }
+}
