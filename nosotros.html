@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style="min-height: 100vh; display: flex; flex-direction: column">
     <!-- Navbar responsive Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
       <div class="container">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNosotros"></div>
       </div>
     </nav>
-    <main>
+    <main style="flex: 1 0 auto">
       <section class="bienvenida">
         <h2>¿Quiénes somos?</h2>
         <p>
@@ -46,29 +46,82 @@
           eficiente y segura.
         </p>
         <h2>Datos de contacto</h2>
-        <ul>
-          <li>
-            <strong>Dirección:</strong> Av. Siempre Viva 123, Buenos Aires,
-            Argentina
-          </li>
-          <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
-          <li><strong>Email:</strong> contacto@seguimientocamiones.com</li>
-        </ul>
+        <div class="container px-0">
+          <div class="row gy-3 justify-content-center">
+            <div class="col-12 col-md-4">
+              <div
+                class="contact-card bg-primary bg-gradient text-white rounded-3 shadow-sm p-3 h-100 d-flex flex-column align-items-center"
+              >
+                <i class="bi bi-geo-alt-fill mb-2" style="font-size: 2em"></i>
+                <span
+                  class="fw-bold"
+                  style="font-family: 'Montserrat', sans-serif"
+                  >Dirección</span
+                >
+                <a
+                  href="https://www.google.com/maps?q=Av.+Siempre+Viva+123,+Buenos+Aires,+Argentina"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-link mt-1"
+                  style="
+                    color: #eebbc3;
+                    font-family: 'Inter', sans-serif;
+                    text-decoration: underline;
+                  "
+                  >Av. Siempre Viva 123, Buenos Aires</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="contact-card bg-success bg-gradient text-white rounded-3 shadow-sm p-3 h-100 d-flex flex-column align-items-center"
+              >
+                <i class="bi bi-telephone-fill mb-2" style="font-size: 2em"></i>
+                <span
+                  class="fw-bold"
+                  style="font-family: 'Montserrat', sans-serif"
+                  >Teléfono</span
+                >
+                <span class="mt-1" style="font-family: 'Inter', sans-serif"
+                  >+54 11 1234-5678</span
+                >
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div
+                class="contact-card bg-info bg-gradient text-dark rounded-3 shadow-sm p-3 h-100 d-flex flex-column align-items-center"
+              >
+                <i class="bi bi-envelope-fill mb-2" style="font-size: 2em"></i>
+                <span
+                  class="fw-bold"
+                  style="font-family: 'Montserrat', sans-serif"
+                  >Email</span
+                >
+                <span class="mt-1" style="font-family: 'Inter', sans-serif"
+                  >info@logisoft.com</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Botón "Volver a inicio" agregado aquí -->
         <a
           href="index.html"
+          class="btn btn-success w-100 mt-3 boton-volver"
           style="
-            display: inline-block;
-            margin-top: 18px;
-            color: #3a86ff;
+            color: #fff;
             font-weight: 600;
             font-family: 'Montserrat', 'Segoe UI', Arial, Helvetica, sans-serif;
-            text-decoration: underline;
+            text-decoration: none;
           "
           >Volver a inicio</a
         >
       </section>
     </main>
-    <footer>
+    <footer
+      class="text-center py-3 bg-dark text-white"
+      style="width: 100vw; position: relative; left: 0; margin-top: auto"
+    >
       © 2025 Desarrollado por Pablo Trovato. Todos los derechos reservados.
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
