@@ -111,10 +111,9 @@ footer {
   display: block;
   width: 100%;
   text-align: center;
-  /* Alineación en la grilla Bootstrap */
   margin-left: auto;
   margin-right: auto;
-  text-decoration: none;
+  text-decoration: none !important; /* Quita el subrayado */
 }
 
 .boton-back:hover,
