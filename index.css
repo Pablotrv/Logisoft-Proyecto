@@ -12,6 +12,12 @@ body {
   font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
   background: #f4f6fb;
   color: #23272f;
+  padding: 0vh;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 100%;
 }
 
 h1,
@@ -103,10 +109,10 @@ footer.container {
   text-align: center;
   font-size: 0.9em;
   box-shadow: 0 -2px 8px rgba(44, 62, 80, 0.08);
-  position: relative;
+  position: fixed;
   bottom: 0;
-  width: 100%;
   left: 0;
+  width: 100vh;
   z-index: 1000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -195,6 +201,49 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
   background: #8338ec;
+  color: #fff;
+}
+
+/* Formato Bootstrap para los enlaces principales */
+.navbar-nav .nav-link,
+.list-unstyled a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none !important; /* Elimina subrayado */
+  cursor: default; /* Opcional: indica que no es clickeable */
+  pointer-events: none; /* Opcional: desactiva interacción */
+  color: #23272f !important; /* Color neutro */
+  background: #e7f0ff;
+}
+
+.navbar-nav .nav-link:hover,
+.list-unstyled a:hover {
+  background: #e7f0ff;
+  color: #23272f !important;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link i,
+.list-unstyled a i {
+  font-size: 1.1em;
+  margin-right: 4px;
+  color: #3a86ff;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link.active,
+.list-unstyled a.active {
+  background: #3a86ff;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link.active i,
+.list-unstyled a.active i {
   color: #fff;
 }
 
