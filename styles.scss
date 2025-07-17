@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-style($family: "Inter", $weight: 400, $size: 1em, $color: #23272f) {
+  font-family: $family, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+
+.titulo {
+  @include font-style("Montserrat", 700, 2em, #23272f);
+}
