@@ -22,7 +22,7 @@ body {
 
 h1,
 .titulo-pagina {
-  color: #3a86ff;
+  color: #eef0f3;
   font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -33,7 +33,7 @@ h1,
 
 h2,
 .subtitulo-principal {
-  color: #8338ec;
+  color: #110ee6;
   font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.2em;
@@ -82,7 +82,7 @@ a:focus,
 
 a:visited,
 .lista-enlaces li a:visited {
-  color: #8338ec !important;
+  color: #5824a0 !important;
 }
 
 ul {
@@ -91,7 +91,7 @@ ul {
 
 header,
 header.container {
-  background: #232946;
+  background: #54c7e4;
   color: #fff;
   border-radius: 0 0 18px 18px;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
