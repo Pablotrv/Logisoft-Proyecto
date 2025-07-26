@@ -100,5 +100,55 @@
     padding: 12px 6px;
   }
 }
+h1 {
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #3a86ff;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+h1 span,
+h1 strong,
+h1 em {
+  color: #06d6a0;
+  font-size: 0.9em;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Agrega esto en tu archivo styles.css o en el SCSS */
+.btn-iniciar-sesion {
+  background: #06d6a0;
+  color: #fff;
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(6, 214, 160, 0.15);
+  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  animation: pulse 1.5s infinite;
+}
+
+.btn-iniciar-sesion:hover,
+.btn-iniciar-sesion:focus {
+  background: #118ab2;
+  color: #fff;
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(17, 138, 178, 0.18);
+  outline: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(6, 214, 160, 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(6, 214, 160, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(6, 214, 160, 0);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
