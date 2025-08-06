@@ -1,6 +1,30 @@
 $primary-color: #334fda;
 $secondary-color: #1d2a6d;
+$accent-color: #06d6a0;
+$accent-color-dark: #118ab2;
 $light-color: #f0aab4;
 $dark-color: #02146d;
+$background-color: #f4f6fb;
+$text-color: #23272f;
+$white: #fff;
+
+// Colores adicionales
+$success-color: #06d6a0;
+$info-color: #3a86ff;
+$warning-color: #ffbe0b;
+$danger-color: #ef476f;
+
+// Tipografía
+$font-main: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+$font-title: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+
+// Bordes y sombras
 $border-radius: 18px;
+$btn-radius: 10px;
 $box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+$box-shadow-hover: 0 6px 24px rgba(58, 134, 255, 0.18);
+
+// Espaciados
+$container-max-width: 1200px;
+$container-padding: 24px 16px;
+$card-padding: 18px 14px;
