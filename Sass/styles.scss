@@ -115,6 +115,45 @@
 .boton-back,
 .volver-inicio-btn {
   @include volver-inicio-btn-style();
+
+  // Nesting para pseudoclases y estados
+  &:hover,
+  &:focus {
+    background: darken(#06d6a0, 10%) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 16px rgba(6, 214, 160, 0.18);
+    outline: none;
+  }
+
+  // Nesting para íconos dentro del botón
+  i {
+    margin-right: 6px;
+    font-size: 1.1em;
+    vertical-align: middle;
+  }
+}
+
+// Ejemplo de nesting para la barra de navegación
+.navbar-nav {
+  .nav-link {
+    @include font-style("Inter", 600, 1em, #fff);
+    transition: color 0.2s, background 0.2s;
+
+    &:hover,
+    &:focus {
+      color: #06d6a0 !important;
+      background: rgba(6, 214, 160, 0.08);
+      text-decoration: none;
+    }
+
+    i {
+      margin-right: 4px;
+      font-size: 1.1em;
+      color: #eebbc3;
+      transition: color 0.2s;
+    }
+  }
 }
 
 @media (max-width: 768px) {
