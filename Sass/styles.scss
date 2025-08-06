@@ -87,6 +87,21 @@
   }
 }
 
+// Define una clase base para botones principales
+%boton-base {
+  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(6, 214, 160, 0.15);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none !important;
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
 // Ejemplo de uso en index
 .titulo {
   @include font-style("Montserrat", 700, 2em, #3a86ff);
@@ -110,13 +125,13 @@
   @include card-style();
 }
 
-// Aplica el mixin a todos los botones de volver a inicio
+// Usa @extend en los botones personalizados
 .boton-volver,
 .boton-back,
 .volver-inicio-btn {
+  @extend %boton-base;
   @include volver-inicio-btn-style();
 
-  // Nesting para pseudoclases y estados
   &:hover,
   &:focus {
     background: darken(#06d6a0, 10%) !important;
@@ -126,11 +141,26 @@
     outline: none;
   }
 
-  // Nesting para íconos dentro del botón
   i {
     margin-right: 6px;
     font-size: 1.1em;
     vertical-align: middle;
+  }
+}
+
+.btn-iniciar-sesion {
+  @extend %boton-base;
+  background: #06d6a0;
+  color: #fff;
+  animation: pulse 1.5s infinite;
+
+  &:hover,
+  &:focus {
+    background: #118ab2;
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(17, 138, 178, 0.18);
+    outline: none;
   }
 }
 
@@ -183,26 +213,6 @@ h1 {
     font-style: italic;
     letter-spacing: 1px;
   }
-}
-
-.btn-iniciar-sesion {
-  background: #06d6a0;
-  color: #fff;
-  font-family: "Montserrat", "Segoe UI", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(6, 214, 160, 0.15);
-  transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
-  animation: pulse 1.5s infinite;
-}
-
-.btn-iniciar-sesion:hover,
-.btn-iniciar-sesion:focus {
-  background: #118ab2;
-  color: #fff;
-  transform: scale(1.07);
-  box-shadow: 0 4px 16px rgba(17, 138, 178, 0.18);
-  outline: none;
 }
 
 @keyframes pulse {
